@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --primary: hsl(0,100%,50%);
+  --secondary: #363636;
+  --extra: rgb(8,8,8);
+}
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+  background: var(--secondary);
+}
+* {
+  color: #fff;
+  margin: 0;
+}
+
+/* Layouts */
+
+div.root-layout {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header nav {
+  background-color: #333131;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+header nav div {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+header nav div a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+header nav div a.active{
+  background-color: var(--primary);
+}
+
+header nav div a:hover{
+  background-color: var(--primary);
+}
+
+header nav div img {
+  width: 120px;
+}
+
+header nav div.register a {
+  background-color: var(--primary);
+  box-sizing: border-box;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+/* Home Component */
+
+/*1.  Home Text */
+div.home {
+  margin-left: 33%;
+  margin-right: 33%;
+  margin-top: 10%;
+}
+
+div.home div p.h4f {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+div.home div {
+  margin-top: 10%;
+}
+
+div.home div p {
+  text-align: center;
+  font-size: 20px;
+  max-width: max-content;
+}
+
+div.home div.home-text-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+div.home div a {
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+div.home-text-links .home-text-link-1 {
+  background-color: var(--primary);
+}
+
+div.home-text-links .home-text-link-2 {
+  background-color: #fff;
+  color: black;
+}
+
+/* 2. Event Info */
+
+div.event-info {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event-info-piece {
+  display: flex;
+  border: 1px solid white;
+  width: 350px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.event-info-piece img {
+  height: 4em;
+  width: 4em;
+}
+
+/* About Page */
+
+/* 1. About Text */
+
+div.about-text {
+  margin: 7%;
+}
+
+div.about-text h2{
+  margin-bottom: 1%;
+}
+
+div.about-text p {
+  margin-bottom: 2%;
+}
+
+/* 2. About Event Details */
+
+div.event-details {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event-detail {
+  display: flex;
+  border: 1px solid white;
+  width: 220px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.event-detail img {
+  height: 4em;
+  width: 4em;
+}
+
+/* Sponsor Us */
+
+div.sponsor-form {
+  margin: 8% 30% auto 30%;
+}
+
+.form-control {
+  margin-bottom: 1em;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+div.name-fields {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div.name-fields div input {
+  width: 270px;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  border: 1px solid #666;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+div.sponsor-form form button {
+  background-color: var(--primary);
+  box-sizing: border-box;
+  padding: 17px 30px;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+/* FAQ Component */
+
+div.faq {
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgb(72, 97, 97);
+  /* color: #363636; */
+  padding: 30px;
+}
+
+div.faqs details summary {
+  font-size: large;
+}
+
+div.question {
+  line-height: 2.5em;
+}
+
+/* CORE TEAM */
+
+div.core-team {
+  display: block;
+}
+
+div.core-team-title {
+  margin-top: 8%;
+  font-size: 40px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+div.core-team-members {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 100%;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+div.core-team-member {
+  display: block;
+  border-radius: 5px;
+}
+
+div.core-team-member img {
+  width: 250px;
+  height: 300px;
+  border-radius: 4px;
+}
+
+div.core-team-member div {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+div.core-team-member div p {
+  color: black;
+  line-height: 2em;
+  font-weight: 600;
+}
+
+div.core-team-member div p.red {
+  color: var(--primary);
+}
+
+/* REGISTER PAGE */
+
+div.register {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 5%; */
+}
+
+div.register form {
+  margin-top: 5%;
+}
+
+.form-control {
+  margin-bottom: 1em;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+div.name-fields {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div.name-fields div input {
+  width: 270px;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  border: 1px solid #666;
+  padding: 10px;
+  box-sizing: border-box;
+  color: black;
+} 
+
+div.register form button {
+  background-color: var(--primary);
+  box-sizing: border-box;
+  padding: 17px 30px;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+div.red {
+  color: var(--primary);
+}
