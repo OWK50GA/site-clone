@@ -347,6 +347,13 @@ div.red {
 
 @media only screen and (max-width: 768px) {
 
+  :root {
+    --primary: rgb(155, 219, 58);
+    --secondary: #363636;
+    --extra: rgb(8,8,8);
+  }
+  
+
 /* LAYOUT */
 
   header nav {
@@ -354,6 +361,7 @@ div.red {
     height: fit-content;
     display: block;
     width: 100%;
+    margin-bottom: 23%;
   }
 
   header nav div.item1 {
@@ -406,11 +414,11 @@ div.red {
     margin-top: 5%;
   }
   
-  /* div.home div {
+  div.home div {
     margin-top: 10%;
   }
-   */
-  /* div.home div p {
+  
+  div.home div p {
     text-align: center;
     font-size: 20px;
     max-width: max-content;
@@ -430,14 +438,61 @@ div.red {
   }
   
   div.home-text-links .home-text-link-1 {
-    background-color: var(--primary);
+    background-color: rgb(155, 219, 58);
   }
   
   div.home-text-links .home-text-link-2 {
     background-color: #fff;
     color: black;
-  } */
+  }
   
+/* SPONSOR FORM */
 
+div.sponsor-form {
+  margin: auto;
+}
+
+div.sponsor-form h2 {
+  text-align: center;
+  margin: 10% auto 5% auto;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.form-control {
+  margin-bottom: 1em;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+div.name-fields {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div.name-fields div input {
+  width: 325px;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  border: 1px solid #666;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+div.sponsor-form form button {
+  background-color: var(--primary);
+  box-sizing: border-box;
+  padding: 17px 30px;
+  border-radius: 4px;
+  box-shadow: none;
+}
 
 }

@@ -28,6 +28,7 @@ const SponsorUs = () => {
 
     return ( 
         <div className="sponsor-form">
+            <h2>Sponsor Us</h2>
             <form onSubmit={formik.handleSubmit}>
                 <div className="form-control">
                     <label htmlFor="name">Sponsor Name</label>
