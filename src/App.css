@@ -396,103 +396,126 @@ div.red {
 
   div.home {
     display: block;
-    margin: 0;
-  }
-  
-  div.home div {
-    display: block;
-    width: 100%;
-    margin: 10% auto auto auto
+    margin: auto;
   }
 
-  div.home div:first-child {
-    margin-left: 16%;
-    margin-right: 16%;
-  }
-
-  div.home div:last-child {
-    margin-top: 5%;
-  }
-  
-  div.home div {
-    margin-top: 10%;
-  }
-  
-  div.home div p {
+  div.home div p.h4f {
+    font-size: 40px;
     text-align: center;
-    font-size: 20px;
-    max-width: max-content;
+    margin-left: 10%;
   }
-  
-  div.home div.home-text-links {
+
+/* 2. EVENTINFO COMPONENT */
+
+  div.event-info {
+    display: block;
+    margin-left: 10%;
+  }
+
+  div.event-info-piece {
     display: flex;
-    justify-content: space-around;
-    gap: 5px;
+    justify-content: flex-start;
+    width: 80%;
+    margin-bottom: 5%;
+    padding: 5%;
   }
   
-  div.home div a {
-    text-decoration: none;
-    box-sizing: border-box;
-    padding: 12px 20px;
+/* ABOUT COMPONENT */
+
+/* 1. Eventdetails component */
+
+  div.event-details {
+    display: block;
+    margin-left: 12%;
+  }
+
+  div.event-detail {
+    display: flex;
+    justify-content: flex-start;
+    padding: 4%;
+    margin-bottom: 5%;
+  }
+
+
+  /* SPONSOR FORM */
+
+  div.sponsor-form {
+    margin: auto;
+    width: 100%;
+  }
+
+  div.sponsor-form h2 {
+    text-align: center;
+    margin: 10% auto 5% auto;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  div.name-fields {
+    display: block;
+  }
+
+  div.name-fields div input {
+    width: 100%;
+  }
+
+  /* REGISTER COMPONENT */
+
+  div.register {
+    display: block;
+  }
+
+  div.register h2 {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  div.red {
+    color: hsl(0,100%,50%);
+  }
+
+  input#firstname, input#lastname {
+    margin-bottom: 0%;
+  }
+
+  div.name-fields div {
+    margin-bottom: 5%;
+  }
+
+  /* FAQS */
+
+  div.faq {
+    margin: auto;
+    /* overflow-x: scroll; */
+  }
+
+  /* ABOUT COMPONENT */
+
+  div.about-text {
+    margin: auto;
+  }
+
+  /* CORE TEAM COMPONENT */
+
+  div.core-team .core-team-title {
+    margin: auto auto 15% auto;
+    width: fit-content;
+  }
+  
+  div.core-team .core-team-title h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  div.core-team-member img {
+    width: 150px;
+    height: 180px;
     border-radius: 4px;
   }
-  
-  div.home-text-links .home-text-link-1 {
-    background-color: rgb(155, 219, 58);
+
+  .core-team-member div {
+    margin: auto;
+    width: fit-content;
   }
-  
-  div.home-text-links .home-text-link-2 {
-    background-color: #fff;
-    color: black;
-  }
-  
-/* SPONSOR FORM */
-
-div.sponsor-form {
-  margin: auto;
-}
-
-div.sponsor-form h2 {
-  text-align: center;
-  margin: 10% auto 5% auto;
-  font-size: 40px;
-  text-transform: uppercase;
-}
-
-.form-control {
-  margin-bottom: 1em;
-}
-
-.form-control label {
-  display: block;
-  margin-bottom: 0.5em;
-}
-
-div.name-fields {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-div.name-fields div input {
-  width: 325px;
-}
-
-.form-control input {
-  display: block;
-  width: 100%;
-  margin-bottom: 1em;
-  border: 1px solid #666;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-div.sponsor-form form button {
-  background-color: var(--primary);
-  box-sizing: border-box;
-  padding: 17px 30px;
-  border-radius: 4px;
-  box-shadow: none;
-}
 
 }

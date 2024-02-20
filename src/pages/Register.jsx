@@ -37,6 +37,7 @@ const Register = () => {
 
     return ( 
         <div className="register">
+            <h2>Register</h2>
             <form onSubmit={formik.handleSubmit}>
             <div className="form-control">
                     <label htmlFor="name">Name</label>

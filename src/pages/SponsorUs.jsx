@@ -34,6 +34,7 @@ const SponsorUs = () => {
                     <label htmlFor="name">Sponsor Name</label>
                     <div className='name-fields'>
                         <div>
+                            <p>FirstName</p>
                             <input 
                             type='text' 
                             name='firstname' 
@@ -42,10 +43,11 @@ const SponsorUs = () => {
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                             />
-                            <p>FirstName</p>
+                            
                             {formik.touched.firstname && formik.errors.firstname? <div className='red'>{formik.errors.firstname}</div>: null}
                         </div>
                         <div>
+                            <p>LastName</p>
                             <input 
                             type="text" 
                             name='lastname' 
@@ -54,7 +56,7 @@ const SponsorUs = () => {
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                             />
-                            <p>LastName</p>
+                            
                             {formik.touched.lastname && formik.errors.lastname? <div className='red'>{formik.errors.lastname}</div>: null}
                         </div>
                     </div>

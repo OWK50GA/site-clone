@@ -30,7 +30,7 @@ const RootLayout = () => {
                     </div>
                     <div className={!isClicked? 'navlinks': 'navlinks mobile'}>
                         <NavLink to="/" onClick={navToggleIsClicked}>Home</NavLink>
-                        <NavLink to="about" onClick={navToggleIsClicked}>About Us</NavLink>
+                        <NavLink to="about" onClick={navToggleIsClicked}>About</NavLink>
                         <NavLink to='sponsor-us' onClick={navToggleIsClicked}>Sponsor Us</NavLink>
                         <NavLink to="faq" onClick={navToggleIsClicked}>FAQ</NavLink>
                         <NavLink to="core-team" onClick={navToggleIsClicked}>Core Team</NavLink>
