@@ -380,15 +380,24 @@ div.red {
 
   header nav div.navlinks.mobile {
     display: grid;
+    grid-gap: 15px;
     margin-top: 5%;
     position: relative;
-    z-index: 999;
+    height: fit-content;
   }
 
-  header nav div.navlinks.mobile a:not(:first-child) {
-    padding: 0;
-    margin-top: -40%;
+  header nav div.navlinks.mobile a {
+    padding: 5%;
+    margin-bottom: 0%;
+    width: 100%;
+    
   }
+
+  header nav div a.active {
+    align-self: center;
+  }
+
+  
 
   /* HOME */
 
@@ -486,7 +495,6 @@ div.red {
 
   div.faq {
     margin: auto;
-    /* overflow-x: scroll; */
   }
 
   /* ABOUT COMPONENT */
